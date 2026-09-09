@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 import { posts, profile } from "@/data/portfolio";
 
 export const metadata: Metadata = {
-  title: `Blog — ${profile.name}`,
+  title: "Blog",
+  description: `Notes and writing from ${profile.name}.`,
 };
 
 export default function BlogPage() {

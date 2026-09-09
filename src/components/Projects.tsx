@@ -26,12 +26,18 @@ export default function Projects() {
             </div>
             <div className="mt-5 flex gap-4 text-sm font-medium">
               {project.liveUrl && (
-                <a href={project.liveUrl} className="text-accent hover:underline">
+                <a
+                  href={project.liveUrl}
+                  className="text-accent hover:underline"
+                >
                   Live site →
                 </a>
               )}
               {project.githubUrl && (
-                <a href={project.githubUrl} className="text-accent hover:underline">
+                <a
+                  href={project.githubUrl}
+                  className="text-accent hover:underline"
+                >
                   Code →
                 </a>
               )}

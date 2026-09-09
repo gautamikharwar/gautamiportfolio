@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { posts, profile } from "@/data/portfolio";
+import { posts } from "@/data/portfolio";
 
 export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
@@ -14,7 +14,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
-  return { title: post ? `${post.title} — ${profile.name}` : profile.name };
+  if (!post) return {};
+  return { title: post.title, description: post.excerpt };
 }
 
 export default async function BlogPostPage({
@@ -40,7 +41,10 @@ export default async function BlogPostPage({
       <h1 className="mt-6 text-3xl font-semibold tracking-tight">
         {post.title}
       </h1>
-      <time dateTime={post.date} className="mt-2 block text-sm text-foreground/50">
+      <time
+        dateTime={post.date}
+        className="mt-2 block text-sm text-foreground/50"
+      >
         {new Date(post.date).toLocaleDateString("en-US", {
           year: "numeric",
           month: "long",

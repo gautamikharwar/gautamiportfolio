@@ -4,9 +4,9 @@ import { profile } from "@/data/portfolio";
 export default function About() {
   return (
     <Section id="about" eyebrow="About" title="A little about me">
-      <div className="grid gap-8 sm:grid-cols-3">
-        <p className="text-foreground/70 sm:col-span-2">{profile.bio}</p>
-        <dl className="space-y-3 text-sm">
+      <div className="max-w-2xl space-y-8">
+        <p className="text-foreground/70">{profile.bio}</p>
+        <dl className="flex flex-wrap gap-x-10 gap-y-4 text-sm">
           <div>
             <dt className="text-foreground/50">Location</dt>
             <dd>{profile.location}</dd>

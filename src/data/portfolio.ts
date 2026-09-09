@@ -1,6 +1,8 @@
 export const profile = {
   name: "Gautami",
   role: "Software Developer",
+  // Dummy domain — replace with the real deployed URL before launch.
+  siteUrl: "https://example.com",
   tagline: "I design and build clean, fast, accessible web experiences.",
   bio: "I'm a software developer who enjoys turning ideas into polished, usable products. I care about clean code, thoughtful interfaces, and the small details that make software feel effortless to use. When I'm not building, I'm usually learning something new or refining a side project.",
   location: "Remote",
@@ -69,7 +71,8 @@ export const experience = [
     role: "B.Tech, Computer Science",
     company: "University Name",
     period: "2019 — 2023",
-    description: "Graduated with a focus on web development and software engineering.",
+    description:
+      "Graduated with a focus on web development and software engineering.",
     highlights: [],
   },
 ];
