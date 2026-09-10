@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { navLinks, profile } from "@/data/portfolio";
+import DownloadIcon from "@/components/icons/DownloadIcon";
 
 export default function Nav() {
   return (
@@ -23,6 +24,14 @@ export default function Nav() {
             </li>
           ))}
         </ul>
+        <a
+          href={profile.resumeUrl}
+          download
+          className="ml-auto flex shrink-0 items-center gap-1.5 rounded-full border border-white/20 px-4 py-1.5 text-sm font-medium whitespace-nowrap text-white transition-colors hover:bg-white/10"
+        >
+          Download Resume
+          <DownloadIcon className="h-3.5 w-3.5" />
+        </a>
       </nav>
     </header>
   );

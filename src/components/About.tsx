@@ -22,8 +22,12 @@ export default function About() {
           <div>
             <dt className="text-foreground/50">Resume</dt>
             <dd>
-              <a href={profile.resumeUrl} className="hover:text-accent">
-                Download PDF
+              <a
+                href={profile.resumeUrl}
+                download
+                className="hover:text-accent"
+              >
+                Download Resume
               </a>
             </dd>
           </div>

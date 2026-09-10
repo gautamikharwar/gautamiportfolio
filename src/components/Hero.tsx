@@ -1,4 +1,5 @@
 import { profile } from "@/data/portfolio";
+import DownloadIcon from "@/components/icons/DownloadIcon";
 
 export default function Hero() {
   return (
@@ -21,9 +22,11 @@ export default function Hero() {
           </a>
           <a
             href={profile.resumeUrl}
-            className="rounded-full border border-white/20 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-white/10"
+            download
+            className="flex items-center gap-2 rounded-full border border-white/20 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-white/10"
           >
-            My Resume
+            Download Resume
+            <DownloadIcon className="h-4 w-4" />
           </a>
         </div>
       </div>

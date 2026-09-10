@@ -7,7 +7,7 @@ export const profile = {
   bio: "8+ years designing digital products across e-commerce, SaaS, and hospitality. I focus on making complex things simple and creating experiences that work for both people and businesses.",
   location: "Remote",
   email: "hello@example.com",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/resume.docx",
   social: [
     { label: "GitHub", href: "https://github.com/yourusername" },
     { label: "LinkedIn", href: "https://linkedin.com/in/yourusername" },
