@@ -1,38 +1,48 @@
-import Section from "@/components/Section";
-import { profile } from "@/data/portfolio";
+import { aboutHeadline, aboutStats } from "@/data/portfolio";
+import ArrowUpRightIcon from "@/components/icons/ArrowUpRightIcon";
 
 export default function About() {
   return (
-    <Section id="about" eyebrow="About" title="A little about me">
-      <div className="max-w-2xl space-y-8">
-        <p className="text-foreground/70">{profile.bio}</p>
-        <dl className="flex flex-wrap gap-x-10 gap-y-4 text-sm">
-          <div>
-            <dt className="text-foreground/50">Location</dt>
-            <dd>{profile.location}</dd>
-          </div>
-          <div>
-            <dt className="text-foreground/50">Email</dt>
-            <dd>
-              <a href={`mailto:${profile.email}`} className="hover:text-accent">
-                {profile.email}
-              </a>
-            </dd>
-          </div>
-          <div>
-            <dt className="text-foreground/50">Resume</dt>
-            <dd>
-              <a
-                href={profile.resumeUrl}
-                download
-                className="hover:text-accent"
-              >
-                Download Resume
-              </a>
-            </dd>
-          </div>
-        </dl>
+    <section
+      id="about"
+      className="scroll-mt-20 border-t border-black/10 py-20 dark:border-white/10"
+    >
+      <div className="mx-auto max-w-4xl px-6">
+        <span className="inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold tracking-wide text-accent uppercase">
+          About Myself
+        </span>
+
+        <div className="mt-6 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+          <h2 className="max-w-xl text-3xl font-semibold tracking-tight sm:text-4xl">
+            {aboutHeadline}
+          </h2>
+          <a
+            href="#contact"
+            className="group inline-flex shrink-0 items-center gap-3 self-start rounded-full bg-foreground py-1.5 pr-1.5 pl-5 text-sm font-medium text-background transition-opacity hover:opacity-90"
+          >
+            Get in touch
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-background text-foreground transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+              <ArrowUpRightIcon className="h-4 w-4" />
+            </span>
+          </a>
+        </div>
+
+        <div className="mt-12 grid gap-4 sm:grid-cols-3">
+          {aboutStats.map((stat) => (
+            <div
+              key={stat.label}
+              className="rounded-2xl bg-black/5 p-6 dark:bg-white/5"
+            >
+              <div className="text-4xl font-semibold tracking-tight">
+                {stat.value}
+              </div>
+              <div className="mt-6 text-sm text-foreground/60">
+                {stat.label}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    </Section>
+    </section>
   );
 }
