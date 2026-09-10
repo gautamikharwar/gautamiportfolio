@@ -13,8 +13,11 @@ export const profile = {
   social: [{ label: "LinkedIn", href: "https://linkedin.com/in/yourusername" }],
 };
 
-export const aboutHeadline =
-  "I help teams turn complex problems into simple, intuitive product experiences that work for people and businesses.";
+export const aboutTitle =
+  "I turn complex problems into simple, useful product experiences.";
+
+export const aboutSubtext =
+  "I'm a UI/UX and Product Designer with 8+ years of experience. I design for web and mobile, from early ideas to final screens, with a focus on making products clear, easy to use, and useful for people.";
 
 export const aboutStats = [
   { value: "8+", label: "Years of design experience" },

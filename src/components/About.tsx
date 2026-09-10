@@ -1,4 +1,4 @@
-import { aboutHeadline, aboutStats } from "@/data/portfolio";
+import { aboutTitle, aboutSubtext, aboutStats } from "@/data/portfolio";
 import ArrowUpRightIcon from "@/components/icons/ArrowUpRightIcon";
 
 export default function About() {
@@ -12,10 +12,13 @@ export default function About() {
           About Myself
         </span>
 
-        <div className="mt-6 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-          <h2 className="max-w-xl text-3xl font-semibold tracking-tight sm:text-4xl">
-            {aboutHeadline}
-          </h2>
+        <div className="mt-6 flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+          <div className="max-w-xl">
+            <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+              {aboutTitle}
+            </h2>
+            <p className="mt-4 text-foreground/70">{aboutSubtext}</p>
+          </div>
           <a
             href="#contact"
             className="group inline-flex shrink-0 items-center gap-3 self-start rounded-full bg-foreground py-1.5 pr-1.5 pl-5 text-sm font-medium text-background transition-opacity hover:opacity-90"
