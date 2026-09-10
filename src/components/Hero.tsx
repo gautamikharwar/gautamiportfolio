@@ -2,8 +2,8 @@ import { profile } from "@/data/portfolio";
 
 export default function Hero() {
   return (
-    <section id="home" className="hero-gradient">
-      <div className="mx-auto max-w-4xl px-6 pb-16 pt-20 sm:pt-28">
+    <section id="home" className="hero-gradient flex items-center">
+      <div className="mx-auto max-w-4xl px-6 py-28 sm:py-36">
         <p className="mb-4 flex items-center gap-2 text-sm font-medium text-indigo-300">
           <span
             className="h-1.5 w-1.5 rounded-full bg-indigo-300"
@@ -23,10 +23,10 @@ export default function Hero() {
             View my work
           </a>
           <a
-            href="#contact"
+            href={profile.resumeUrl}
             className="rounded-full border border-white/20 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-white/10"
           >
-            Get in touch
+            My Resume
           </a>
         </div>
       </div>
