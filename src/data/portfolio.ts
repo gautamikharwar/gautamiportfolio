@@ -1,10 +1,10 @@
 export const profile = {
   name: "Gautami",
-  role: "Software Developer",
+  role: "UI/UX Designer · Product Designer",
   // Dummy domain — replace with the real deployed URL before launch.
   siteUrl: "https://example.com",
-  tagline: "I design and build clean, fast, accessible web experiences.",
-  bio: "I'm a software developer who enjoys turning ideas into polished, usable products. I care about clean code, thoughtful interfaces, and the small details that make software feel effortless to use. When I'm not building, I'm usually learning something new or refining a side project.",
+  tagline: "I turn ideas into simple, useful products.",
+  bio: "8+ years designing digital products across e-commerce, SaaS, and hospitality. I focus on making complex things simple and creating experiences that work for both people and businesses.",
   location: "Remote",
   email: "hello@example.com",
   resumeUrl: "/resume.pdf",
