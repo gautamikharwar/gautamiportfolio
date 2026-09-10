@@ -20,3 +20,18 @@ Dummy values — swap for brand colors when available.
 | `success` | `#16a34a` |
 | `warning` | `#d97706` |
 | `error`   | `#dc2626` |
+
+## Hero background
+
+The Hero section uses a fixed dark gradient (`.hero-gradient` in
+`globals.css`) instead of the standard light/dark tokens above — it does not
+follow the OS theme, so text inside it uses hardcoded white/indigo values
+rather than `foreground`/`accent`.
+
+| Layer               | Value                    | Notes                              |
+| ------------------- | ------------------------ | ---------------------------------- |
+| Base                | `#060405`                | Near-black base fill               |
+| Glow (bottom-right) | `rgba(255,140,66,0.9)`   | Warm orange radial glow            |
+| Glow (top-right)    | `rgba(255,140,66,0.75)`  | Warm orange radial glow            |
+| Glow (center)       | `rgba(139,26,26,0.9)`    | Deep red radial glow               |
+| Grid lines          | `rgba(255,255,255,0.07)` | 1px vertical lines every 25% width |
