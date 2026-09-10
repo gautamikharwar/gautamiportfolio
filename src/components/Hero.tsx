@@ -4,11 +4,8 @@ export default function Hero() {
   return (
     <section id="home" className="hero-gradient flex items-center">
       <div className="mx-auto max-w-4xl px-6 py-28 sm:py-36">
-        <p className="mb-4 flex items-center gap-2 text-sm font-medium text-indigo-300">
-          <span
-            className="h-1.5 w-1.5 rounded-full bg-indigo-300"
-            aria-hidden
-          />
+        <p className="mb-4 flex items-center gap-2 text-sm font-medium text-white">
+          <span className="h-1.5 w-1.5 rounded-full bg-white" aria-hidden />
           {profile.role}
         </p>
         <h1 className="max-w-2xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
